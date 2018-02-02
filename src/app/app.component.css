@@ -1,0 +1,22 @@
+
+
+  agm-map {
+	  height:300px;
+    min-height:300px !important;
+    min-width: 100% !important;
+  }
+  
+  .agm-map-container-inner {
+    min-height:300px !important;
+    position: absolute;
+  }
+  .map {
+    min-height:300px !important;
+  }
+  * {
+    font-family: Lato;
+  }
+  
+  a {
+    color: darkblue;
+  } 

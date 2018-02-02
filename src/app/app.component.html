@@ -1,0 +1,42 @@
+<div class="container py-5">
+	<style>
+	.map {
+		min-heigth:300px;
+    }
+    .zipcode{
+        background-image: url('./assets/img/pin2.png');
+        height: 500px;
+        background-repeat: no-repeat;
+        
+     }
+     #cep{
+         margin-left: 51%;
+         color:	#518583;
+     }
+     .btn-cep{
+        background-color: #2D5D3D;
+        border-color: #2D5D3D;
+        margin-left: 60%;
+     }
+
+    </style>
+    
+    <div class="row">
+        <div class="col-md-6 offset-md-2 zipcode">
+              <form class="form" novalidate>                              
+                    <div class="form-group" style="margin-top:100px;">
+                        <h2 id="cep">BUSCAR CEP</h2>
+                        <input #zipcode class="form-control" id="zipcode" type="text" placeholder="" [(ngModel)]="zipcodeModel" [ngModelOptions]="{standalone: true}" required="" style="
+                        margin-left: 51%; width: 35%;text-align:center;" />
+                    </div>
+                    <button (click)="onClickZipcode(zipcode.value)" type="button" class="btn btn-info btn-lg btn-cep"> GO</button>
+                </form>          
+            
+        </div>
+    </div>
+    
+    <app-zip-code-details [address]="searchAddress"></app-zip-code-details>  
+          
+    
+</div>
+
